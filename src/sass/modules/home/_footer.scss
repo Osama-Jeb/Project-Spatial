@@ -1,0 +1,25 @@
+footer {
+    background-color: #F6F6F6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 80px;
+    flex-direction: column;
+    height: auto;
+    gap: 30px;
+
+    div {
+        height: auto;
+        width: 20%;
+        display: flex;
+        justify-content: space-between;
+        @media (min-width:375px) and (max-width: 425px){
+            width: 90%;
+        }
+
+        a {
+            color: gray;
+            text-decoration: none;
+        }
+    }
+}

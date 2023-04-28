@@ -1,0 +1,12 @@
+@import "../../node_modules/bootstrap/scss/functions";
+@import "../../node_modules/bootstrap/scss/variables";
+
+$pink : #FE2753;
+$spatial-gray : #F6F6F6;
+
+$custom-colors: (
+    "pink" : $pink,
+    "spatial-gray" : $spatial-gray,
+);
+
+$theme-colors : map-merge($theme-colors, $custom-colors );
