@@ -5,7 +5,8 @@ main {
         display: flex;
         justify-content: space-evenly;
         align-items: center;
-        @media (min-width:375px) and (max-width: 425px){
+
+        @media (min-width:375px) and (max-width: 425px) {
             flex-direction: column;
             padding: 10px;
             text-align: center;
@@ -13,14 +14,16 @@ main {
 
         .section1-left {
             width: 35%;
-            @media (min-width:375px) and (max-width: 425px){
+
+            @media (min-width:375px) and (max-width: 425px) {
                 width: 90%;
             }
         }
 
         .section1-right {
             width: 35%;
-            @media (min-width:375px) and (max-width: 425px){
+
+            @media (min-width:375px) and (max-width: 425px) {
                 width: 90%;
             }
         }
@@ -47,7 +50,8 @@ main {
             gap: 30px;
             align-items: center;
             margin-bottom: 30px;
-            @media (min-width:375px) and (max-width: 425px){
+
+            @media (min-width:375px) and (max-width: 425px) {
                 flex-direction: column;
             }
 
@@ -55,8 +59,9 @@ main {
                 background-color: white;
                 height: auto;
                 box-shadow: 1px 1px 20px gray;
-                @media (min-width:375px) and (max-width: 425px){
-                    img{
+
+                @media (min-width:375px) and (max-width: 425px) {
+                    img {
                         height: 250px;
                         width: 250px;
                     }
@@ -67,7 +72,8 @@ main {
         .section2-buttons {
             button {
                 padding: 10px 25px;
-                @media (min-width:375px) and (max-width: 425px){
+
+                @media (min-width:375px) and (max-width: 425px) {
                     margin-bottom: 10px;
                 }
 
@@ -82,6 +88,7 @@ main {
     .section3 {
         height: auto;
         padding: 80px;
+
         @media (min-width:375px) and (max-width: 425px) {
             text-align: center;
         }
@@ -89,7 +96,8 @@ main {
 
     .section4 {
         padding: 80px;
-        @media (min-width:375px) and (max-width: 425px){
+
+        @media (min-width:375px) and (max-width: 425px) {
             padding: 20px;
         }
 
@@ -98,14 +106,16 @@ main {
             gap: 50px;
             justify-content: space-around;
             align-items: center;
-            @media (min-width:375px) and (max-width: 425px){
+
+            @media (min-width:375px) and (max-width: 425px) {
                 display: block;
             }
 
             .content {
                 display: flex;
                 gap: 20px;
-                @media (min-width:375px) and (max-width: 425px){
+
+                @media (min-width:375px) and (max-width: 425px) {
                     flex-direction: column;
                     justify-content: center;
                     margin: 20px;
@@ -114,25 +124,40 @@ main {
 
                 .content-text-end {
                     text-align: end;
-                    @media (min-width:375px) and (max-width: 425px){
+
+                    @media (min-width:375px) and (max-width: 425px) {
                         text-align: center;
                     }
                 }
 
                 .content-text-start {
                     text-align: start;
-                    @media (min-width:375px) and (max-width: 425px){
+
+                    @media (min-width:375px) and (max-width: 425px) {
                         text-align: center;
                     }
                 }
 
                 .content-image {
-                    @media (min-width:375px) and (max-width: 425px){
+                    @media (min-width:375px) and (max-width: 425px) {
                         margin: 0 auto;
                     }
+
                     img {
                         border: 7px solid rgb(185, 185, 185);
                         border-radius: 50%;
+
+                        @keyframes ani-img {
+                            100% {
+                                transform: rotate(360deg);
+                                border-bottom-right-radius: 0%;
+                                border-top-left-radius: 0%;
+                            }
+                        }
+                    }
+
+                    img:hover {
+                        animation: ani-img 2s forwards linear;
                     }
                 }
             }
@@ -141,13 +166,15 @@ main {
 
     .section5 {
         position: relative;
+        height: auto;
 
         .back-img {
             background-image: url("../img/banner.jpg");
             height: 40vh;
             background-position: center;
             filter: brightness(50%);
-            @media (min-width:375px) and (max-width: 425px){
+
+            @media (min-width:375px) and (max-width: 425px) {
                 height: 60vh;
             }
         }
@@ -159,12 +186,14 @@ main {
             transform: translate(-50%, -50%);
             color: white;
             text-align: center;
-            @media (min-width:375px) and (max-width: 425px){
-                div{
-                    h1{
-                        font-size:large;
+
+            @media (min-width:375px) and (max-width: 425px) {
+                div {
+                    h1 {
+                        font-size: large;
                     }
-                    h4{
+
+                    h4 {
                         font-size: smaller;
                     }
                 }

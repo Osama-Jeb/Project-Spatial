@@ -1,7 +1,8 @@
-*{
+* {
     margin: 0;
     padding: 0;
 }
+
 header {
     position: relative;
 
@@ -13,7 +14,7 @@ header {
         filter: brightness(50%);
     }
 
-    .banner{
+    .banner {
         display: flex;
         justify-content: center;
         align-items: center;
@@ -22,16 +23,21 @@ header {
         z-index: 1010;
         color: white;
         width: 100%;
-        div{
+
+        div {
             text-align: center;
-            h4{
+
+            h4 {
                 font-weight: lighter;
             }
-            button{
+
+            button {
                 padding: 15px 25px;
+                box-shadow: 0px 0px 20px $pink
             }
         }
     }
+
     nav {
         color: rgb(189, 188, 188);
         display: flex;
@@ -42,7 +48,8 @@ header {
         top: 0;
         width: 100%;
         z-index: 1030;
-        @media (min-width: 375px) and (max-width: 425px){
+
+        @media (min-width: 375px) and (max-width: 425px) {
             flex-direction: column;
             gap: 10px;
         }
@@ -52,6 +59,7 @@ header {
             display: flex;
             justify-content: center;
             align-items: center;
+
             @media (min-width: 375px) and (max-width: 425px) {
                 margin: 0;
                 padding: 0;

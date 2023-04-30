@@ -10925,6 +10925,7 @@ header .banner div h4, header .banner div .h4 {
 }
 header .banner div button {
   padding: 15px 25px;
+  box-shadow: 0px 0px 20px #FE2753;
 }
 header nav {
   color: rgb(189, 188, 188);
@@ -11108,8 +11109,19 @@ main .section4 .vertical-container .content .content-image img {
   border: 7px solid rgb(185, 185, 185);
   border-radius: 50%;
 }
+@keyframes ani-img {
+  100% {
+    transform: rotate(360deg);
+    border-bottom-right-radius: 0%;
+    border-top-left-radius: 0%;
+  }
+}
+main .section4 .vertical-container .content .content-image img:hover {
+  animation: ani-img 2s forwards linear;
+}
 main .section5 {
   position: relative;
+  height: auto;
 }
 main .section5 .back-img {
   background-image: url("../img/banner.jpg");
